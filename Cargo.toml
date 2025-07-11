@@ -1,0 +1,13 @@
+[package]
+name = "trayer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+iced = { git = "https://github.com/iced-rs/iced", branch = "master", features = [
+    "advanced",
+    "tokio",
+] }
+ksni = "0.3"
+tokio = { version = "1", features = ["rt", "rt-multi-thread", "macros"] }
+image = "0.25"
